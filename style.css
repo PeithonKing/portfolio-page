@@ -1,0 +1,23 @@
+.front-section {
+	/* background-color: #f8f9fa; */
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.profile-picture {
+	width: 100%;
+}
+
+.front-heading {
+	font-size: 72px;
+	margin-bottom: 24px;
+}
+
+.front-subheading {
+	font-size: 36px;
+	margin-bottom: 48px;
+}
+
+.front-text {
+	font-size: 18px;
+}
