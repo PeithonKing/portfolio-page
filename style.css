@@ -27,6 +27,11 @@
 	margin-left: 12%;
 }
 
+.non-blue-link{
+	text-decoration: none;
+	color: white;
+}
+
 /* when the screen is 768px or less, do the following */
 @media screen and (max-width: 768px) {
 	.about {
