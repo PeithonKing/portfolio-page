@@ -21,3 +21,16 @@
 .front-text {
 	font-size: 18px;
 }
+
+.about {
+	width: 75%;
+	margin-left: 12%;
+}
+
+/* when the screen is 768px or less, do the following */
+@media screen and (max-width: 768px) {
+	.about {
+		width: 100%;
+		margin-left: 0;
+	}
+}
