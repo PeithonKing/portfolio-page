@@ -32,10 +32,52 @@
 	color: white;
 }
 
+a {
+	color: white;
+	text-decoration: underline;
+}
+a:hover {
+	/* color: rgb(255, 237, 186); */
+	text-decoration: none;
+}
+
+
+
+
+/* .skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 500px;
+	margin: 2px;
+} */
+
+.skill {
+	margin: 2px;
+}
+
+
+.my-name {
+	font-size: 72px;
+}
+.my-position {
+	font-size: 36px;
+}
+
+
 /* when the screen is 768px or less, do the following */
 @media screen and (max-width: 768px) {
 	.about {
 		width: 100%;
 		margin-left: 0;
+	}
+	.my-name {
+		font-size: 55px;
+	}
+	.my-position {
+		font-size: 28px;
+	}
+	.skills{
+		margin-top: 20px;
 	}
 }
