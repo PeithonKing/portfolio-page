@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Project 1",
+		"description": "This is the description for Project 1. It showcases the use of JavaScript and HTML to create a simple website.",
+		"link": "https://example.com/project1",
+		"status": "completed"
+	},
+	{
+		"title": "Project 2",
+		"description": "Project 2 is an Android app developed using Java and Android Studio. It features various functionalities for users.",
+		"link": "https://example.com/project2",
+		"status": "completed"
+	},
+	{
+		"title": "Project 3",
+		"description": "In Project 3, I designed a RESTful API using Node.js and Express, providing data for a web application.",
+		"link": "https://example.com/project3",
+		"status": "completed"
+	}
+]
