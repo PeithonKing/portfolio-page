@@ -1,20 +1,72 @@
 [
 	{
-		"title": "Project 1",
-		"description": "This is the description for Project 1. It showcases the use of JavaScript and HTML to create a simple website.",
-		"link": "https://example.com/project1",
-		"status": "completed"
+		"display": true,
+		"title": "Came first in the ML4SCI Hackathon",
+		"professor": "ML4SCI Hackathon",
+		"status": "completed",
+		"date": "Nov 2021 - Jan 2022",
+		"location": "online",
+		"description": "I, with my friend, participated in this competition. We were given 6 problems and were supposed to solve one (or more) of them using our Machine Learning skills. We went with the Higgs Challenge. We were given a dataset of 11 million data points and were expected to predict the presence of Higgs boson. We used an ensemble model which consisted of 5 neural network architectures and an XGBoost architecture. We were able to achieve an area of 0.88 under the ROC Curve.",
+		"link": "https://github.com/PeithonKing/ML_comp"
 	},
 	{
-		"title": "Project 2",
-		"description": "Project 2 is an Android app developed using Java and Android Studio. It features various functionalities for users.",
-		"link": "https://example.com/project2",
-		"status": "completed"
+		"display": true,
+		"title": "Quantum Computation Internship",
+		"professor": "<a href='https://www.iiserkol.ac.in/web/en/people/faculty/dps/pprasanta/'>Prof. Prasanta K. Panigrahi</a>",
+		"status": "completed",
+		"date": "June 2022 - July 2022",
+		"location": "<a href='https://www.iiserkol.ac.in/web/en/'>IISER Kolkata</a>",
+		"description": "Here I learned the basics of quantum computation and various aspects of it. I read a lot of papers suggested by my instructor and also did some activities on my own. Finally, I read a paper on a Quantum Robot and felt I could solve the problem addressed in the paper better. So I learned more about the topic and submitted my report on the same.",
+		"link": "https://peithonking.github.io/Quantum_Robot_LaTEX/quantum_robot_internship_report.pdf"
 	},
 	{
-		"title": "Project 3",
-		"description": "In Project 3, I designed a RESTful API using Node.js and Express, providing data for a web application.",
-		"link": "https://example.com/project3",
-		"status": "completed"
+		"display": true,
+		"title": "Quantum Computation Course",
+		"professor": "<a href='http://www.iisertirupati.ac.in/'>IISER Tirupati</a> & <a href='https://qkrishi.com/'>Qkrishi</a>",
+		"status": "completed",
+		"date": "2022 Summer Break",
+		"location": "Online",
+		"description": "I did a course on the basics of Quantum Computation and Quantum Information jointly organized by <a href='http://www.iisertirupati.ac.in/'>IISER Tirupati</a> and Qkrishi. We learned the basic theory and had a hands-on experience with the IBM Quantum Experience. We also submitted a term project of Attacking Quantum Key Distribution Protocols. We demonstrated QKD algorithms like BB84 and E91 protocols in multiple devices on the same network using python libraries like Flask and Qiskit.",
+		"link": "https://github.com/PeithonKing/Attacking_QKD_Protocols"
+	},
+	{
+		"display": true,
+		"title": "Building a Drone",
+		"professor": "<a href='https://www.niser.ac.in/~smishra/club/rtc/'>RoboTech Club, NISER</a>",
+		"status": "completed",
+		"date": "June - July 2021",
+		"location": "NISER",
+		"description": "We built an autonomous drone with aid from RTC. The structure of the drone was built from scratch using aluminium box pipes, switchboard sunmica plates, and some small 3D-printed parts. We used pixhawk 4 as the flight controller. It can fly in both manual mode or follow a predefined path using GPS. This drone can be developed further for learning.",
+		"link": ""
+	},
+	{
+		"display": true,
+		"title": "Machine Learning Internship",
+		"professor": "<a href='https://www.iiserkol.ac.in/web/en/people/faculty/cds/kripaghosh'>Prof. Kripabandhu Ghosh</a>",
+		"status": "completed",
+		"date": "Dec 2021 - Jul 2022",
+		"location": "<a href='https://www.iiserkol.ac.in/web/en/'>IISER Kolkata</a>",
+		"description": "Here I specifically focused on the Natural Language Processing (NLP) and Information Retrieval part of ML. I learned more about the different steps of doing NLP, their problems, and the different processes to solve them. I also learned about some scoring algorithms for sorting documents in a corpus concerning relevance to a query. Finally, I succeeded in bringing a MAP value of 0.21 for the AILA dataset provided to me (the maximum MAP value achieved before that was 0.14).",
+		"link": "https://github.com/PeithonKing/AILA"
+	},
+	{
+		"display": true,
+		"title": "PyaR Seminar 2021",
+		"professor": "<a href='https://www.astro.ucsc.edu/faculty/index.php?uid=pguhatha'>Prof. Raja GuhaThakurata</a>",
+		"status": "completed",
+		"date": "July 29th - 31st, 2021",
+		"location": "Online",
+		"description": "Here we learned the python programming language and how it can be used with Jupyter Notebook. We also learned the basics of astronomical data analysis using libraries like Numpy, Pandas, matplotlib etc. We were also briefed about some clustering algorithms used daily in this field.",
+		"link": "https://github.com/PeithonKing/PyaR-2021"
+	},
+	{
+		"display": true,
+		"title": "Member of the RoboTech Club of NISER",
+		"professor": "<a href='https://niser.ac.in/~smishra/'>Prof. Subhankar Mishra's Lab</a>",
+		"status": "",
+		"date": "Jan 2021 - Present",
+		"location": "<a href='https://github.com/smlab-niser'>smlab-niser</a>",
+		"description": "Here I am currently involved in the RoboTech Club of NISER. I have been focusing on the Natural Language Processing (NLP) and Information Retrieval part of ML. I have learned more about the different steps of doing NLP, their problems, and the different processes to solve them. I have also learned about some scoring algorithms for sorting documents in a corpus concerning relevance to a query. In the past, I succeeded in bringing a MAP value of 0.21 for the AILA dataset provided to me (the maximum MAP value achieved before that was 0.14).",
+		"link": ""
 	}
 ]

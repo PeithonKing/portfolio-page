@@ -32,10 +32,15 @@
 	color: white;
 }
 
-a {
-	color: white;
+.non-blue-link:hover{
 	text-decoration: underline;
 }
+
+/* a {
+	color: white;
+	text-decoration: underline;
+} */
+
 a:hover {
 	/* color: rgb(255, 237, 186); */
 	text-decoration: none;

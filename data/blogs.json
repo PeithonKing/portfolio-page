@@ -5,7 +5,8 @@
 		"alt_text": "Getting started with Blynk 2.0",
 		"description": "Blynk is a popular IoT platform that enables easy cloud connectivity for devices, allowing them to be operated from anywhere. Using NodeMCU and the Arduino IDE, this tutorial will show how to program and utilize Blynk for coordinated device communication.",
 		"link": "https://rtcniser.github.io/Blynk-IoT-Blogs/",
-		"link_text": "RTC"
+		"link_text": "RTC",
+		"display": true
 	},
 	{
 		"image": "images/circuit.png",
@@ -13,6 +14,7 @@
 		"alt_text": "Arduino with Python and pyFirmata",
 		"description": "In this article, we will learn how to link an Arduino to a Python script in order to operate the Arduino. This example of constructing a 4-bit binary up-counter using Python script to control Arduino helps us understand this better.",
 		"link": "https://www.geeksforgeeks.org/control-arduino-with-python-and-pyfirmata/",
-		"link_text": "GFG"
+		"link_text": "GFG",
+		"display": true
 	}
 ]
