@@ -4,19 +4,19 @@
 		"title": "Microsoft Academic Partnership Grant (MAPG) 2023",
 		"professor": "Neural Networks at a Fraction (Prof. Subhankar Mishra)",
 		"status": "ongoing",
-		"date": "2023",
+		"date": "July 2023- June 2024",
 		"location": "",
 		"description": "Recipient of the prestigious Microsoft Academic Partnership Grant (MAPG) 2023 for our project on optimizing complex neural networks with fewer parameters. Led by Prof. Subhankar Mishra in collaboration with PhD student Rucha Joshi, we aim to contribute to groundbreaking advancements in efficient neural network architectures.",
 		"link": "https://www.linkedin.com/posts/aritra-mukhopadhyay-212172224_microsoft-india-datascience-activity-7084930054694088704-F-hk?utm_source=share&utm_medium=member_desktop"
 	},
 	{
-		"display": false,
-		"title": "Improvement on the Quaternion-based models: extension to larger datasets and Batch Normalization",
+		"display": true,
+		"title": "Improvement on the Quaternion-based models: extension to larger datasets and models",
 		"professor": "<a href='https://niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
-		"status": "ongoing",
+		"status": "completed",
 		"date": "Jan - July 2023",
 		"location": "NISER, SM Lab",
-		"description": "I am addressing the shortcomings of earlier research on the lottery ticket hypothesis for quaternion-based models as part of my term project for the CS460 ML Course. Even while earlier work had success with smaller models and datasets, it had difficulties with batch normalisation code that ran slowly and didn't test bigger datasets and models. In order to overcome these restrictions and develop the field of quaternion based models, I am concentrating on increasing the efficiency of Batch Normalization to enable trials with bigger data sets and models.",
+		"description": "Explored lottery ticket hypothesis on large quaternion-based ResNets for Cifar100 & Imagenet. Discovered superior accuracy retention on pruning compared to real models. Valuable insights for efficient deep learning architectures.",
 		"link": "https://github.com/smlab-niser/quatLT23"
 	},
 	{
@@ -26,7 +26,7 @@
 		"status": "completed",
 		"date": "Nov 2021 - Jan 2022",
 		"location": "online",
-		"description": "I, with my friend, participated in this competition. We were given 6 problems and were supposed to solve one (or more) of them using our Machine Learning skills. We went with the Higgs Challenge. We were given a dataset of 11 million data points and were expected to predict the presence of Higgs boson. We used an ensemble model which consisted of 5 neural network architectures and an XGBoost architecture. We were able to achieve an area of 0.88 under the ROC Curve.",
+		"description": "Participated in Higgs Challenge of ML4SCI competition with 11M data points dataset. Employed ensemble model (5 NNs + XGBoost) to predict Higgs boson presence, achieving ROC AUC of 0.88 on test set. Came first. Collaborated with <a href='https://github.com/dc250601' target='__blank'>Diptarko Chakroborty</a>.",
 		"link": "https://github.com/PeithonKing/ML_comp"
 	},
 	{
@@ -36,7 +36,7 @@
 		"status": "completed",
 		"date": "June 2022 - July 2022",
 		"location": "<a href='https://www.iiserkol.ac.in/web/en/'>IISER Kolkata</a>",
-		"description": "This was my first internship. Here I learned the basics of quantum computation and various aspects of the topic. I read a lot of papers suggested by my instructor and also did some activities on my own. Finally, I read a paper on a Quantum Robot and felt I could solve the problem addressed in the paper better. So I learned more about the topic and submitted my report on the same.",
+		"description": "First Internship: Explored quantum computation fundamentals and various aspects. Read various research papers and pursued independent activities. Focused on Quantum Robotics paper, proposed innovative solutions in report. Enhanced research and problem-solving skills.",
 		"link": "https://peithonking.github.io/Quantum_Robot_LaTEX/quantum_robot_internship_report.pdf"
 	},
 	{
@@ -46,7 +46,7 @@
 		"status": "completed",
 		"date": "2022 Summer Break",
 		"location": "Online",
-		"description": "I did a course on the basics of Quantum Computation and Quantum Information jointly organized by <a href='http://www.iisertirupati.ac.in/'>IISER Tirupati</a> and Qkrishi. We learned the basic theory and had a hands-on experience with the IBM Quantum Experience. We also submitted a term project of Attacking Quantum Key Distribution Protocols. We demonstrated QKD algorithms like BB84 and E91 protocols in multiple devices on the same network using python libraries like Flask and Qiskit.",
+		"description": "Summer course on Quantum Computation and Quantum Information by IISER Tirupati and Qkrishi. Covered theory and IBM Quantum Experience. Project on Attacking QKD Protocols. Demonstrated QKD algorithms (BB84 and E91) with Flask and Qiskit on multiple network devices.",
 		"link": "https://github.com/PeithonKing/Attacking_QKD_Protocols"
 	},
 	{
@@ -56,7 +56,7 @@
 		"status": "completed",
 		"date": "June - July 2021",
 		"location": "NISER",
-		"description": "We built an autonomous drone with aid from RTC. The structure of the drone was built from scratch using aluminium box pipes, switchboard sunmica plates, and some small 3D-printed parts. We used pixhawk 4 as the flight controller. It can fly in both manual mode or follow a predefined path using GPS. This drone can be developed further for learning.",
+		"description": "Built an autonomous drone with RTC support. Constructed the drone from scratch using aluminium box pipes, switchboard sunmica plates, and 3D-printed parts. Utilized pixhawk 4 as the flight controller. Features manual and pre-programmed GPS-guided flight modes. Potential for further development and learning.",
 		"link": ""
 	},
 	{
@@ -66,7 +66,7 @@
 		"status": "completed",
 		"date": "Dec 2021 - Jul 2022",
 		"location": "<a href='https://www.iiserkol.ac.in/web/en/'>IISER Kolkata</a>",
-		"description": "Here I specifically focused on the Natural Language Processing (NLP) and Information Retrieval part of ML. I learned more about the different steps of doing NLP, their problems, and the different processes to solve them. I also learned about some scoring algorithms for sorting documents in a corpus concerning relevance to a query. Finally, I succeeded in bringing a MAP value of 0.21 for the AILA dataset provided to me (the maximum MAP value achieved before that was 0.14).",
+		"description": "Focused on NLP and Information Retrieval in ML. Explored NLP steps, problems, and solutions. Learned scoring algorithms for document sorting in a corpus based on query relevance. Achieved MAP value of 0.21 for AILA dataset (previous max was 0.14).",
 		"link": "https://github.com/PeithonKing/AILA"
 	},
 	{

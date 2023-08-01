@@ -10,7 +10,7 @@
 	},
 	{
 		"image": "images/circuit.png",
-		"full_title": "Control Arduino with Python and pyFirmata",
+		"full_title": "Control Arduino with Python and pyFirmata | GeeksForGeeks",
 		"alt_text": "Arduino with Python and pyFirmata",
 		"description": "In this article, we will learn how to link an Arduino to a Python script in order to operate the Arduino. This example of constructing a 4-bit binary up-counter using Python script to control Arduino helps us understand this better.",
 		"link": "https://www.geeksforgeeks.org/control-arduino-with-python-and-pyfirmata/",
