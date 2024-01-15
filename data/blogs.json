@@ -16,5 +16,14 @@
 		"link": "https://www.geeksforgeeks.org/control-arduino-with-python-and-pyfirmata/",
 		"link_text": "GFG",
 		"display": true
+	},
+	{
+		"image": "images/markdown.png",
+		"full_title": "Markdown | NISER Coding Club Blogs",
+		"alt_text": "Markdown",
+		"description": "Markdown is a lightweight markup language designed for easy readability and writing. It simplifies text formatting, providing a human-readable way to create rich documents without the complexities of traditional word processors, becoming widely adopted across platforms.",
+		"link": "https://sdgniser.github.io/coding_club_blogs/jekyll/update/2023/12/29/markdown.html",
+		"link_text": "Coding Club Blogs",
+		"display": true
 	}
 ]

@@ -1,6 +1,16 @@
 [
 	{
 		"display": true,
+		"title": "(Paper) Large Neural Networks at a Fraction",
+		"professor": "co authors: Adhilsha A and Prof. Subhankar Mishra",
+		"status": "completed",
+		"date": "Jan 2024",
+		"location": "NLDL (Norway)",
+		"description": "Our paper on veryfying lottery ticket hypothesis on large quaternion models and large datasets got accepted in the <a href='https://www.nldl.org/'>Northern Lights Deep Learning conference (Norway)</a> 2024. We showed how quaternion models retain good performance on more drastic pruning than real models.",
+		"link": "https://openreview.net/forum?id=xVbMj75YDD"
+	},
+	{
+		"display": true,
 		"title": "Microsoft Academic Partnership Grant (MAPG) 2023",
 		"professor": "Neural Networks at a Fraction (Prof. Subhankar Mishra)",
 		"status": "ongoing",
