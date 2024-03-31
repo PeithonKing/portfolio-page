@@ -20,7 +20,7 @@
 		"link": "https://www.linkedin.com/posts/aritra-mukhopadhyay-212172224_microsoft-india-datascience-activity-7084930054694088704-F-hk?utm_source=share&utm_medium=member_desktop"
 	},
 	{
-		"display": false,
+		"display": true,
 		"title": "Improvement on the Quaternion-based models: extension to larger datasets and models",
 		"professor": "<a href='https://niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
 		"status": "completed",
@@ -50,7 +50,7 @@
 		"link": "https://peithonking.github.io/Quantum_Robot_LaTEX/quantum_robot_internship_report.pdf"
 	},
 	{
-		"display": true,
+		"display": false,
 		"title": "Quantum Computation Course",
 		"professor": "<a href='http://www.iisertirupati.ac.in/'>IISER Tirupati</a> & <a href='https://qkrishi.com/'>Qkrishi</a>",
 		"status": "completed",
