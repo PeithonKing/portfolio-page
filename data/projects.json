@@ -20,7 +20,7 @@
 		"link": "https://www.linkedin.com/posts/aritra-mukhopadhyay-212172224_microsoft-india-datascience-activity-7084930054694088704-F-hk?utm_source=share&utm_medium=member_desktop"
 	},
 	{
-		"display": true,
+		"display": false,
 		"title": "Improvement on the Quaternion-based models: extension to larger datasets and models",
 		"professor": "<a href='https://niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
 		"status": "completed",
