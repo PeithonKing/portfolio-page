@@ -74,7 +74,7 @@ function fetchBlogsData() {
 		.then(response => response.json())
 		.then(data => {
 			// Call the function to populate the cards with the fetched data
-			populateBlogCards(data);
+			populateBlogCards(data.reverse());
 		})
 		.catch(error => console.error('Error fetching blogs data:', error));
 }
