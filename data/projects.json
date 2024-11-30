@@ -87,7 +87,7 @@
 		"date": "June - July 2021",
 		"location": "NISER",
 		"description": "Built an autonomous drone with RTC support. Constructed the drone from scratch using aluminium box pipes, switchboard sunmica plates, and 3D-printed parts. Utilized pixhawk 4 as the flight controller. Features manual and pre-programmed GPS-guided flight modes. Potential for further development and learning.",
-		"link": ""
+		"link": "https://github.com/rtcniser/2022-23_Drone_CONCLUDED"
 	},
 	{
 		"display": true,
