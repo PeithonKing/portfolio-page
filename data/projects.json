@@ -1,26 +1,46 @@
 [
 	{
 		"display": true,
-		"title": "(Paper) Large Neural Networks at a Fraction",
-		"professor": "co authors: Adhilsha A and Prof. Subhankar Mishra",
+		"title": "[Paper] Transformers at a Fraction",
+		"professor": "co authors: <a href='https://ruchajoshi.github.io/' target=_blank>Rucha Joshi</a>, Nidhi Tiwari and <a href='https://www.niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
 		"status": "completed",
 		"date": "Jan 2024",
-		"location": "NLDL (Norway)",
+		"location": "Tromso (Norway)",
+		"description": "In this paper we showed how quaternion transformers perform better than real transformers on extreme sparse conditions.",
+		"link": "https://openreview.net/forum?id=1U0kkt7ymn"
+	},
+	{
+		"display": true,
+		"title": "Importance Sampling and Machine Learning Approach for Classical Ising Model",
+		"professor": "<a href='https://sites.google.com/site/workpagetemp/Profile'>Prof. Anamitra Mukherjee</a>",
+		"status": "ongoing",
+		"date": "Aug 2024 to present",
+		"location": "NISER",
+		"description": "Generated a lot of lattice configuration given some temperature and some hamiltonian (Ising Model here). Now we plan to use machine learning to predict a lot of physical quantities which willl bypass the need ton run the simulation",
+		"link": "https://sites.google.com/site/workpagetemp/group-members"
+	},
+	{
+		"display": true,
+		"title": "[Paper] Large Neural Networks at a Fraction",
+		"professor": "co authors: Adhilsha A and <a href='https://www.niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
+		"status": "completed",
+		"date": "Jan 2024",
+		"location": "Tromso (Norway)",
 		"description": "Our paper on veryfying lottery ticket hypothesis on large quaternion models and large datasets got accepted in the <a href='https://www.nldl.org/'>Northern Lights Deep Learning conference (Norway)</a> 2024. We showed how quaternion models retain good performance on more drastic pruning than real models.",
 		"link": "https://openreview.net/forum?id=xVbMj75YDD"
 	},
 	{
 		"display": true,
 		"title": "Microsoft Academic Partnership Grant (MAPG) 2023",
-		"professor": "Neural Networks at a Fraction (Prof. Subhankar Mishra)",
-		"status": "ongoing",
+		"professor": "<a href='https://www.niser.ac.in/~smishra/'>SM Lab</a> and <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india/'>MSR India</a>",
+		"status": "completed",
 		"date": "July 2023- June 2024",
 		"location": "",
 		"description": "Recipient of the prestigious Microsoft Academic Partnership Grant (MAPG) 2023 for our project on optimizing complex neural networks with fewer parameters. Led by Prof. Subhankar Mishra in collaboration with PhD student Rucha Joshi, we aim to contribute to groundbreaking advancements in efficient neural network architectures.",
 		"link": "https://www.linkedin.com/posts/aritra-mukhopadhyay-212172224_microsoft-india-datascience-activity-7084930054694088704-F-hk?utm_source=share&utm_medium=member_desktop"
 	},
 	{
-		"display": true,
+		"display": false,
 		"title": "Improvement on the Quaternion-based models: extension to larger datasets and models",
 		"professor": "<a href='https://niser.ac.in/~smishra/'>Prof. Subhankar Mishra</a>",
 		"status": "completed",
@@ -80,7 +100,7 @@
 		"link": "https://github.com/PeithonKing/AILA"
 	},
 	{
-		"display": true,
+		"display": false,
 		"title": "PyaR Seminar 2021",
 		"professor": "<a href='https://www.astro.ucsc.edu/faculty/index.php?uid=pguhatha'>Prof. Raja GuhaThakurata</a>",
 		"status": "completed",
