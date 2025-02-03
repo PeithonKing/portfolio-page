@@ -69,13 +69,43 @@ function fetchProjectsData() {
 fetchProjectsData();
 
 
-function fetchBlogsData() {
-	fetch('data/blogs.json')
-		.then(response => response.json())
-		.then(data => {
-			// Call the function to populate the cards with the fetched data
-			populateBlogCards(data.reverse());
-		})
-		.catch(error => console.error('Error fetching blogs data:', error));
+async function fetchBlogsData() {
+    try {
+        // Fetch JSON Data
+        let jsonResponse = await fetch('data/blogs.json');
+        let jsonData = await jsonResponse.json();
+
+        // Fetch XML Data
+        let xmlResponse = await fetch('https://peithonking.github.io/my_blogs/rss.xml');
+        let xmlText = await xmlResponse.text();
+
+        // Parse XML
+        let parser = new DOMParser();
+        let xmlDoc = parser.parseFromString(xmlText, "text/xml");
+
+        // Convert XML to JSON-like structure
+        let items = xmlDoc.querySelectorAll("item");
+        let xmlData = Array.from(items).map(item => ({
+            image: item.querySelector("enclosure")?.getAttribute("url") || "images/default.png",
+            full_title: item.querySelector("title")?.textContent || "No Title",
+            alt_text: item.querySelector("title")?.textContent || "No Title",
+            description: item.querySelector("description")?.textContent || "No Description",
+            link: item.querySelector("link")?.textContent || "#",
+            link_text: "Personal Blogs",
+            display: true,
+            date: item.querySelector("pubDate")?.textContent || "Unknown Date"
+        }));
+
+        // Merge JSON and XML data
+        let mergedData = [...jsonData, ...xmlData];
+
+        // Call the function to populate the cards with the merged data
+        populateBlogCards(mergedData);
+    } catch (error) {
+        console.error('Error fetching or processing blogs data:', error);
+    }
 }
+
+// Call function
 fetchBlogsData();
+

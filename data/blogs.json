@@ -28,7 +28,7 @@
 	},
 	{
 		"image": "images/ml01.png",
-		"full_title": "ML01: Linear Regression and Gradient Descent | NISER Coding Club Blogs",
+		"full_title": "[ML01] Linear Regression and Gradient Descent | NISER Coding Club Blogs",
 		"alt_text": "Linear Regression and Gradient Descent",
 		"description": "This blog post introduces the basics of Machine Learning, focusing on Linear Regression and Gradient Descent. It covers key concepts, mathematical aspects, and practical applications. This is the first blog in the ML series, setting the stage for further exploration.",
 		"link": "https://sdgniser.github.io/coding_club_blogs/blogs/2024/03/24/linear-regression-and-gradient-descent.html",
