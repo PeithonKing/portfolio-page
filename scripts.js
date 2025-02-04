@@ -46,7 +46,7 @@ function populateBlogCards(blogsData) {
 						<div class="card-body">
 							<h5 class="card-title">${blog.full_title}</h5>
 							<p class="card-text">${blog.description}</p>
-							<a href="${blog.link}" class="btn btn-primary">Go To ${blog.link_text} Page</a>
+							<a href="${blog.link}" class="btn btn-primary" target="_blank">Go To ${blog.link_text} Page</a>
 						</div>
 					</div>
 				`;
@@ -77,6 +77,7 @@ async function fetchBlogsData() {
 
         // Fetch XML Data
         let xmlResponse = await fetch('https://peithonking.github.io/my_blogs/rss.xml');
+        // let xmlResponse = await fetch('http://localhost:4321/my_blogs/rss.xml');
         let xmlText = await xmlResponse.text();
 
         // Parse XML
@@ -98,6 +99,9 @@ async function fetchBlogsData() {
 
         // Merge JSON and XML data
         let mergedData = [...jsonData, ...xmlData];
+
+		// sort them by date
+		mergedData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         // Call the function to populate the cards with the merged data
         populateBlogCards(mergedData);

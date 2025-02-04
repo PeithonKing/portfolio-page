@@ -1,30 +1,23 @@
 [
 	{
-		"image": "images/getting-started-with-blynk2.0-banner.png",
-		"full_title": "Blynk 2.0 | Getting Started | RTC",
-		"alt_text": "Getting started with Blynk 2.0",
-		"description": "Blynk is a popular IoT platform that enables easy cloud connectivity for devices, allowing them to be operated from anywhere. Using NodeMCU and the Arduino IDE, this tutorial will show how to program and utilize Blynk for coordinated device communication.",
-		"link": "https://rtcniser.github.io/Blynk-IoT-Blogs/",
-		"link_text": "RTC",
-		"display": true
-	},
-	{
 		"image": "images/circuit.png",
 		"full_title": "Control Arduino with Python and pyFirmata | GeeksForGeeks",
 		"alt_text": "Arduino with Python and pyFirmata",
 		"description": "In this article, we will learn how to link an Arduino to a Python script in order to operate the Arduino. This example of constructing a 4-bit binary up-counter using Python script to control Arduino helps us understand this better.",
 		"link": "https://www.geeksforgeeks.org/control-arduino-with-python-and-pyfirmata/",
 		"link_text": "GFG",
-		"display": true
+		"display": true,
+		"date": "2023-06-08"
 	},
 	{
 		"image": "images/markdown.png",
 		"full_title": "Markdown | NISER Coding Club Blogs",
 		"alt_text": "Markdown",
 		"description": "Markdown is a lightweight markup language designed for easy readability and writing. It simplifies text formatting, providing a human-readable way to create rich documents without the complexities of traditional word processors, becoming widely adopted across platforms.",
-		"link": "https://sdgniser.github.io/coding_club_blogs/jekyll/update/2023/12/29/markdown.html",
+		"link": "https://sdgniser.github.io/coding_club_blogs/blogs/2023/12/29/markdown.html",
 		"link_text": "Coding Club Blogs",
-		"display": true
+		"display": true,
+		"date": "2023-12-23"
 	},
 	{
 		"image": "images/ml01.png",
@@ -33,6 +26,7 @@
 		"description": "This blog post introduces the basics of Machine Learning, focusing on Linear Regression and Gradient Descent. It covers key concepts, mathematical aspects, and practical applications. This is the first blog in the ML series, setting the stage for further exploration.",
 		"link": "https://sdgniser.github.io/coding_club_blogs/blogs/2024/03/24/linear-regression-and-gradient-descent.html",
 		"link_text": "Coding Club Blogs",
-		"display": true
+		"display": true,
+		"date": "2024-03-24"
 	}
 ]
