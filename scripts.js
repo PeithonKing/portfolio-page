@@ -5,24 +5,21 @@ function populateProjectCards(projectsData) {
 	projectsData.forEach(project => {
 		if (project.display) {
 			const cardDiv = document.createElement('div');
-			db = "";
 			ds = "";
 			dd = "";
 			dl = "";
-			if (project.link == "") {db = `style="display: none;"`;}
 			if (project.status != "") {ds = `<b>Status:</b> ${project.status}<br>`;}
 			if (project.date != "") {dd = `<b>Date:</b> ${project.date}<br>`;}
 			if (project.location != "") {dl = `<b>Location:</b> ${project.location}<br>`;}
 			cardDiv.classList.add('col');
 			cardDiv.innerHTML = `
-				<div class="card h-100">
+				<div class="card h-100 project_hover" data-link="${project.link}" style="cursor: pointer;">
 					<div class="card-body">
 					<h5 class="card-title">${project.title}</h5>
 					<div class="card-text">
 						<small class="text-muted">${project.professor}<br>${ds}${dd}${dl}</small>
 					</div>
 					<p class="card-text" style="text-align: justify">&emsp;${project.description}</p>
-					<a href="${project.link}" class="btn btn-primary" target="_blank" ${db}>View More</a>
 					</div>
 				</div>
 				`;
@@ -31,29 +28,49 @@ function populateProjectCards(projectsData) {
 	});
 }
 
+// After cards are created, attach this event listener to the container or each card:
+document.getElementById('projects_pop').addEventListener('click', function(event) {
+  // Find closest card element with project_hover class
+  const card = event.target.closest('.project_hover');
+  if (!card) return; // click outside a card
 
-// Function to populate the cards in the 'blogs_pop' div
+  // Check if the click is inside an <a> tag
+  if (event.target.closest('a')) {
+    // Click was on a link inside the card, let default happen, no action
+    return;
+  }
+
+  // Otherwise open link from data-link attribute or similar
+  const url = card.getAttribute('data-link');
+  if (url) {
+    window.open(url, '_blank', 'noopener');
+  }
+});
+
+
+
+
+// Function to populate the blogs section with minimal tiles
 function populateBlogCards(blogsData) {
 	const blogsPopDiv = document.getElementById('blogs_pop');
 
 	blogsData.forEach(blog => {
 		if (blog.display) {
-			const cardDiv = document.createElement('div');
-			cardDiv.classList.add('col-lg-4', 'col-md-6', 'col-sm-12', 'my-2');
-			cardDiv.innerHTML = `
-					<div class="card border-0 shadow mb-4 h-100">
-						<img src="${blog.image}" class="card-img-top" alt="${blog.alt_text}">
-						<div class="card-body">
-							<h5 class="card-title">${blog.full_title}</h5>
-							<p class="card-text">${blog.description}</p>
-							<a href="${blog.link}" class="btn btn-primary" target="_blank">Go To ${blog.link_text} Page</a>
-						</div>
-					</div>
-				`;
-			blogsPopDiv.appendChild(cardDiv);
+			const blogCol = document.createElement('div');
+			blogCol.classList.add('col-6', 'col-md-4', 'col-lg-3', 'mb-4');
+
+			blogCol.innerHTML = `
+				<a href="${blog.link}" target="_blank" class="blog-tile d-block position-relative overflow-hidden rounded shadow-sm">
+					<img src="${blog.image}" alt="${blog.alt_text}" class="img-fluid w-100">
+					<div class="blog-title px-2 py-1">${blog.full_title}</div>
+				</a>
+			`;
+
+			blogsPopDiv.appendChild(blogCol);
 		}
 	});
 }
+
 
 
 

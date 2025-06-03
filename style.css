@@ -86,3 +86,52 @@ a:hover {
 		margin-top: 20px;
 	}
 }
+
+
+.blog-tile {
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.blog-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.blog-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.blog-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+
+
+.project_hover {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  background-color: white;
+  cursor: pointer;
+}
+
+.project_hover:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
