@@ -61,7 +61,7 @@ function populateBlogCards(blogsData) {
 
 			blogCol.innerHTML = `
 				<a href="${blog.link}" target="_blank" class="blog-tile d-block position-relative overflow-hidden rounded shadow-sm">
-					<img src="${blog.image}" alt="${blog.alt_text}" class="img-fluid w-100">
+					<img src="${blog.image}" alt="${blog.alt_text}" class="img-fluid w-100" loading="lazy" decoding="async">
 					<div class="blog-title px-2 py-1">${blog.full_title}</div>
 				</a>
 			`;
