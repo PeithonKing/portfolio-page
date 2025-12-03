@@ -14,7 +14,7 @@
 		"title": "Importance Sampling and Machine Learning Approach for Classical Ising Model",
 		"professor": "<a href='https://sites.google.com/site/workpagetemp/Profile' target='_blank'>Prof. Anamitra Mukherjee</a>",
 		"status": "completed",
-		"date": "Aug 2024 to present",
+		"date": "Aug 2024 to Aug 2025",
 		"location": "<a href='https://www.niser.ac.in/' target='_blank'>NISER</a>",
 		"description": "Generated a lot of lattice configuration given some temperature and some hamiltonian (Ising Model here). Now we plan to use machine learning to predict a lot of physical quantities which will bypass the need to run the simulation.",
 		"link": "https://sites.google.com/site/workpagetemp/group-members"
