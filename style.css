@@ -32,7 +32,7 @@
 
     /* Hero Font Sizes (Editable) */
     --hero-name-size: 3.0rem;
-    --hero-position-size: 1.5rem;
+    --hero-position-size: 1.4rem;
     --hero-text-size: 1.15rem;
 }
 
@@ -446,6 +446,12 @@ img {
     gap: 0.25rem;
     font-size: 0.85rem;
     color: var(--stone-400);
+    flex: 1;
+    /* Take available space */
+    min-width: 0;
+    /* Allow shrinking */
+    padding-right: 0.5rem;
+    /* Gap from button */
 }
 
 .meta-item {
@@ -454,14 +460,17 @@ img {
     gap: 0.5rem;
     position: relative;
     /* For tooltip positioning */
+    max-width: 100%;
 }
 
 .meta-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
-    /* Adjust width as needed */
+    flex: 1;
+    /* Grow/shrink to fill space */
+    min-width: 0;
+    /* Allow truncation */
     display: block;
 }
 
