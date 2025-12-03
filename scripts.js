@@ -5,22 +5,48 @@ function populateProjectCards(projectsData) {
 	projectsData.forEach(project => {
 		if (project.display) {
 			const cardDiv = document.createElement('div');
-			let ds = "";
-			let dd = "";
-			let dl = "";
-			if (project.status != "") { ds = `<b>Status:</b> ${project.status}<br>`; }
-			if (project.date != "") { dd = `<b>Date:</b> ${project.date}<br>`; }
-			if (project.location != "") { dl = `<b>Location:</b> ${project.location}<br>`; }
 
-			// No 'col' class needed as the parent is a grid
+			// Determine badge class based on status
+			let statusBadgeClass = 'badge-completed';
+			if (project.status && project.status.toLowerCase().includes('ongoing')) {
+				statusBadgeClass = 'badge-ongoing';
+			}
+
+			// Check for [Paper] prefix
+			let displayTitle = project.title;
+			let isPaper = false;
+			if (displayTitle.startsWith('[Paper] ')) {
+				displayTitle = displayTitle.replace('[Paper] ', '');
+				isPaper = true;
+			}
+
+			// Clean up professor/co-author text (remove HTML tags if needed for cleaner look, or keep as is)
+			// For this design, we'll keep the HTML but ensure it fits the meta-info style
+
 			cardDiv.innerHTML = `
-				<div class="card project_hover" data-link="${project.link}" style="cursor: pointer;">
-					<div class="card-body">
-					<h5 class="card-title">${project.title}</h5>
-					<div class="card-text">
-						<small class="text-muted">${project.professor}<br>${ds}${dd}${dl}</small>
+				<div class="project-card">
+					<div class="card-header">
+						<h3 class="card-title">${displayTitle}</h3>
+						<div class="badges">
+							${isPaper ? `<span class="badge badge-paper">Paper</span>` : ''}
+							${project.status ? `<span class="badge ${statusBadgeClass}">${project.status}</span>` : ''}
+							${project.date ? `<span class="badge badge-date">${project.date}</span>` : ''}
+						</div>
 					</div>
-					<p class="card-text" style="text-align: justify">&emsp;${project.description}</p>
+					<div class="card-body">
+						${project.description}
+					</div>
+					<div class="card-footer">
+						<div class="meta-info">
+							${project.location ? `<div class="meta-item"><i class="bi bi-geo-alt-fill" style="color: #ef4444;"></i> ${project.location}</div>` : ''}
+							${project.professor ? `
+								<div class="meta-item">
+									<i class="bi bi-people-fill" style="color: #3b82f6;"></i>
+									<span class="meta-text">${project.professor}</span>
+									<div class="meta-tooltip">${project.professor}</div>
+								</div>` : ''}
+						</div>
+						<a href="${project.link}" target="_blank" class="btn-view">More</a>
 					</div>
 				</div>
 				`;
@@ -132,4 +158,14 @@ async function fetchBlogsData() {
 
 // Call function
 fetchBlogsData();
+
+// Navbar Scroll Effect
+window.addEventListener('scroll', function () {
+	const navbar = document.querySelector('.navbar');
+	if (window.scrollY > 50) {
+		navbar.classList.add('scrolled');
+	} else {
+		navbar.classList.remove('scrolled');
+	}
+});
 

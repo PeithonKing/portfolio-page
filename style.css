@@ -30,6 +30,10 @@
     --font-main: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
     /* --font-main: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
 
+    /* Hero Font Sizes (Editable) */
+    --hero-name-size: 3.0rem;
+    --hero-position-size: 1.5rem;
+    --hero-text-size: 1.15rem;
 }
 
 * {
@@ -44,6 +48,8 @@ body {
     font-family: var(--font-main);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    padding-top: 80px;
+    /* Compensate for fixed navbar */
 }
 
 html {
@@ -195,13 +201,50 @@ img {
     }
 }
 
+/* Custom About Me Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .about-grid {
+        /* Change these values to adjust column widths */
+        /* 2fr 1fr means the first column is twice as wide as the second */
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
 /* Components */
 
+/* Navbar */
 /* Navbar */
 .navbar {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(28, 25, 23, 0.8);
+    /* var(--stone-900) with opacity */
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 0.75rem 0;
+    background-color: rgba(28, 25, 23, 0.95);
+    border-bottom: 1px solid var(--stone-700);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me Paragraphs */
+.container-narrow p {
+    font-size: 1.15rem;
+    line-height: 1.7;
 }
 
 .nav-brand {
@@ -236,21 +279,21 @@ img {
 }
 
 .hero-name {
-    font-size: 2.5rem;
+    font-size: var(--hero-name-size);
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
 
 .hero-position {
-    font-size: 1.25rem;
+    font-size: var(--hero-position-size);
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
 .hero-text {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: var(--hero-text-size);
     max-width: 65ch;
 }
 
@@ -303,58 +346,173 @@ img {
     border-radius: 9999px;
 }
 
-/* Cards (Projects & Blogs) */
-.card {
-    background-color: var(--bg-card);
+/* Project Card Styles */
+.project-card {
+    background-color: var(--stone-800);
     border: 1px solid var(--border-color);
     border-radius: 1rem;
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    height: 100%;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover {
+.project-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
     border-color: var(--stone-600);
 }
 
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background-color: var(--stone-800);
-}
-
-.card-body {
-    padding: 1.5rem;
-    flex: 1;
+.card-header {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .card-title {
+    color: var(--stone-50);
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.3;
 }
 
-.card-text {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-completed {
+    background-color: rgba(22, 163, 74, 0.2);
+    color: #4ade80;
+    border: 1px solid rgba(22, 163, 74, 0.4);
+}
+
+.badge-ongoing {
+    background-color: rgba(234, 179, 8, 0.2);
+    color: #facc15;
+    border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+.badge-date {
+    background-color: rgba(168, 162, 158, 0.2);
+    color: var(--stone-300);
+    border: 1px solid rgba(168, 162, 158, 0.4);
+}
+
+.badge-paper {
+    background-color: rgba(59, 130, 246, 0.2);
+    /* Blue-500 */
+    color: #60a5fa;
+    /* Blue-400 */
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.card-body {
+    color: var(--stone-300);
+    font-size: 0.95rem;
+    line-height: 1.6;
     flex: 1;
+    padding: 0;
+    /* Override default padding */
 }
 
 .card-footer {
-    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 1rem;
     border-top: 1px solid var(--stone-700);
-    font-size: 0.875rem;
-    color: var(--text-muted);
+    margin-top: auto;
+}
+
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    color: var(--stone-400);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    /* For tooltip positioning */
+}
+
+.meta-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    /* Adjust width as needed */
+    display: block;
+}
+
+/* Custom Tooltip */
+.meta-tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: var(--stone-900);
+    border: 1px solid var(--stone-700);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    max-width: 300px;
+    z-index: 20;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    transform: translateY(10px);
+    pointer-events: none;
+    color: var(--stone-300);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: normal;
+    /* Allow wrapping in tooltip */
+}
+
+.meta-item:hover .meta-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    /* Allow clicking links in tooltip */
+}
+
+.btn-view {
+    background-color: transparent;
+    color: var(--orange-600);
+    border: 1px solid var(--orange-600);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-view:hover {
+    background-color: var(--orange-600);
+    color: white;
 }
 
 /* Blog Card Specifics */
