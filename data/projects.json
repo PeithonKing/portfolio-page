@@ -17,7 +17,7 @@
 		"date": "Aug 2024 to Aug 2025",
 		"location": "<a href='https://www.niser.ac.in/' target='_blank'>NISER</a>",
 		"description": "Generated a lot of lattice configuration given some temperature and some hamiltonian (Ising Model here). Now we plan to use machine learning to predict a lot of physical quantities which will bypass the need to run the simulation.",
-		"link": "https://sites.google.com/site/workpagetemp/group-members"
+		"link": "https://peithonking.github.io/Aritra_Mukhopadhyay_MSc_Thesis.pdf"
 	},
 	{
 		"display": true,
@@ -26,7 +26,7 @@
 		"status": "completed",
 		"date": "Jan 2024",
 		"location": "<a href='https://maps.app.goo.gl/7tfj24nAfTALYqxb9' target='_blank'>UiT tromso</a> (Norway)",
-		"description": "Our paper on veryfying lottery ticket hypothesis on large quaternion models and large datasets got accepted in the <a href='https://www.nldl.org/'>Northern Lights Deep Learning conference (Norway)</a> 2024. We showed how quaternion models retain good performance on more drastic pruning than real models.",
+		"description": "Our paper on veryfying lottery ticket hypothesis on large quaternion models and large datasets got accepted in the <a href='https://www.nldl.org/' target='_blank'>Northern Lights Deep Learning conference (Norway)</a> 2024. We showed how quaternion models retain good performance on more drastic pruning than real models.",
 		"link": "https://openreview.net/forum?id=xVbMj75YDD"
 	},
 	{
@@ -52,7 +52,7 @@
 	{
 		"display": true,
 		"title": "Came first in the ML4SCI Hackathon",
-		"professor": "ML4SCI Hackathon",
+		"professor": "<a href='https://github.com/ML4SCI/ML4SCIHackathon' target='_blank'>ML4SCI Hackathon</a>",
 		"status": "completed",
 		"date": "Nov 2021 - Jan 2022",
 		"location": "online",
@@ -62,10 +62,10 @@
 	{
 		"display": true,
 		"title": "Quantum Computation Internship",
-		"professor": "<a href='https://www.iiserkol.ac.in/web/en/people/faculty/dps/pprasanta/' target='_blank'>Prof. Prasanta K. Panigrahi</a>",
+		"professor": "<a href='https://arxiv.org/a/panigrahi_p_1.html' target='_blank'>Prof. Prasanta K. Panigrahi</a>",
 		"status": "completed",
 		"date": "June 2022 - July 2022",
-		"location": "<a href='https://www.iiserkol.ac.in/web/en/' target='_blank'>IISER Kolkata</a>",
+		"location": "<a href='https://www.iiserkol.ac.in' target='_blank'>IISER Kolkata</a>",
 		"description": "First Internship: Explored quantum computation fundamentals and various aspects. Read various research papers and pursued independent activities. Focused on Quantum Robotics paper, proposed innovative solutions in report. Enhanced research and problem-solving skills.",
 		"link": "https://peithonking.github.io/Quantum_Robot_LaTEX/quantum_robot_internship_report.pdf"
 	},
@@ -82,7 +82,7 @@
 	{
 		"display": true,
 		"title": "Building a Drone",
-		"professor": "<a href='https://www.niser.ac.in/~smishra/club/rtc/' target='_blank'>RoboTech Club, NISER</a>",
+		"professor": "<a href='https://github.com/rtcniser' target='_blank'>RoboTech Club, NISER</a>",
 		"status": "completed",
 		"date": "June - July 2021",
 		"location": "<a href='https://www.niser.ac.in/' target='_blank'>NISER</a>",
@@ -92,10 +92,10 @@
 	{
 		"display": true,
 		"title": "Machine Learning Internship",
-		"professor": "<a href='https://www.iiserkol.ac.in/web/en/people/faculty/cds/kripaghosh' target='_blank'>Prof. Kripabandhu Ghosh</a>",
+		"professor": "<a href='https://sites.google.com/view/kripabandhughosh-homepage' target='_blank'>Prof. Kripabandhu Ghosh</a>",
 		"status": "completed",
 		"date": "Dec 2021 - Jul 2022",
-		"location": "<a href='https://www.iiserkol.ac.in/web/en/' target='_blank'>IISER Kolkata</a>",
+		"location": "<a href='https://www.iiserkol.ac.in/' target='_blank'>IISER Kolkata</a>",
 		"description": "Focused on NLP and Information Retrieval in ML. Explored NLP steps, problems, and solutions. Learned scoring algorithms for document sorting in a corpus based on query relevance. Achieved MAP value of 0.21 for AILA dataset (previous max was 0.14).",
 		"link": "https://github.com/PeithonKing/AILA"
 	},
