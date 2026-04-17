@@ -1,6 +1,26 @@
 [
 	{
 		"display": true,
+		"title": "MoirePy: Python-Rust Framework for Efficient Moire Lattice Simulation",
+		"professor": "<a href='https://github.com/jabed-umar' target='_blank'>Jabed Umar</a> (co-author/collaborator)",
+		"status": "ongoing",
+		"date": "Oct 2024 - Present",
+		"location": "Independent + <a href='https://www.niser.ac.in/' target='_blank'>NISER</a>",
+		"description": "Building and maintaining MoirePy, a FOSS Python library with a Rust backend for high-performance moire superlattice simulation. Supports arbitrary geometries, custom hopping models, OBC/PBC workflows, and exports SciPy sparse Hamiltonians for NumPy/Kwant pipelines. Submitted a JOSS manuscript for this work.",
+		"link": "https://jabed-umar.github.io/MoirePy/"
+	},
+	{
+		"display": false,
+		"title": "OpenRiyaaz",
+		"professor": "Independent project",
+		"status": "ongoing",
+		"date": "Mar 2026",
+		"location": "Personal project",
+		"description": "Built a Progressive Web App (PWA) for distraction-free vocal practice with tabla support. Implemented in vanilla JavaScript with persistent user settings, media controls, and installable app behavior so musicians can practice without ads or paywalls.",
+		"link": "https://peithonking.github.io/OpenRiyaaz"
+	},
+	{
+		"display": true,
 		"title": "[Paper] Transformers at a Fraction",
 		"professor": "<a href='https://ruchajoshi.github.io/' target='_blank'>Dr. Rucha Joshi,</a> <a href='https://www.linkedin.com/in/dr-nidhi-tiwari-105b1130/' target='_blank'>Dr. Nidhi Tiwari</a>, <a href='https://www.niser.ac.in/~smishra/' target='_blank'>Prof. Subhankar Mishra</a>",
 		"status": "completed",
@@ -60,7 +80,7 @@
 		"link": "https://github.com/PeithonKing/ML_comp"
 	},
 	{
-		"display": true,
+		"display": false,
 		"title": "Quantum Computation Internship",
 		"professor": "<a href='https://arxiv.org/a/panigrahi_p_1.html' target='_blank'>Prof. Prasanta K. Panigrahi</a>",
 		"status": "completed",
