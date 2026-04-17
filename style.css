@@ -52,6 +52,10 @@ body {
     /* Compensate for fixed navbar */
 }
 
+body.all-projects-page {
+    padding-top: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -119,6 +123,23 @@ img {
 
 .text-right {
     text-align: right;
+}
+
+.all-projects-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Subtle visual differentiation for entries hidden on homepage */
+body.all-projects-page .project-card {
+    opacity: 0.4;
+}
+
+body.all-projects-page .project-card-archived {
+    opacity: 1;
 }
 
 .flex {
@@ -364,6 +385,34 @@ img {
     transform: translateY(-4px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
     border-color: var(--stone-600);
+}
+
+.explore-projects-card {
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 260px;
+    border-style: dashed;
+    border-width: 2px;
+    background-color: transparent;
+    color: var(--stone-300);
+}
+
+.explore-projects-card:hover {
+    color: var(--stone-50);
+    border-color: var(--orange-600);
+    background-color: rgba(234, 88, 12, 0.08);
+}
+
+.explore-projects-text {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 .card-header {
@@ -635,5 +684,24 @@ img {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .all-projects-head {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .explore-projects-card {
+        min-height: auto;
+        padding: 0.9rem 1rem;
+        border-radius: 0.75rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .explore-projects-text {
+        font-size: 0.95rem;
+        font-weight: 700;
     }
 }

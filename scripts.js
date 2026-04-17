@@ -1,7 +1,6 @@
 // Function to populate the project cards in the 'projects_pop' div
 function populateProjectCards(projectsData) {
 	const projectsPopDiv = document.getElementById('projects_pop');
-
 	projectsData.forEach(project => {
 		if (project.display) {
 			const cardDiv = document.createElement('div');
@@ -53,6 +52,18 @@ function populateProjectCards(projectsData) {
 			projectsPopDiv.appendChild(cardDiv);
 		}
 	});
+
+	const hasHiddenProjects = projectsData.some(project => !project.display);
+	if (hasHiddenProjects) {
+		// Append one CTA card after visible projects (n + 1 position).
+		const exploreDiv = document.createElement('div');
+		exploreDiv.innerHTML = `
+			<a href="all-projects.html" class="project-card explore-projects-card" aria-label="Explore all projects">
+				<span class="explore-projects-text">Explore all projects</span>
+			</a>
+		`;
+		projectsPopDiv.appendChild(exploreDiv);
+	}
 }
 
 // After cards are created, attach this event listener to the container or each card:
@@ -168,4 +179,3 @@ window.addEventListener('scroll', function () {
 		navbar.classList.remove('scrolled');
 	}
 });
-
