@@ -2,7 +2,7 @@
 
 # Portfolio Page
 
-Welcome to my portfolio page! This repository contains the code for my personal portfolio page. The portfolio page is hosted using GitHub Pages. You can view it at [https://peithonking.github.io/portfolio-page/](https://peithonking.github.io/portfolio-page/).
+Welcome to my portfolio page! This repository contains the code for my personal portfolio page. The portfolio page is hosted using GitHub Pages. You can view it at [https://cv.peithonking.com/](https://cv.peithonking.com/).
 
 ## Technologies Used
 
@@ -29,7 +29,7 @@ Happy browsing!
 <!-- # Older Readme
 
 
-Welcome to my portfolio page! This repository contains the code for my personal portfolio page. The portfolio page is hosted using GitHub Pages. You can view it at [https://peithonking.github.io/portfolio-page/](https://peithonking.github.io/portfolio-page/).
+Welcome to my portfolio page! This repository contains the code for my personal portfolio page. The portfolio page is hosted using GitHub Pages. You can view it at [https://cv.peithonking.com/](https://cv.peithonking.com/).
 
 ## Technologies Used
 

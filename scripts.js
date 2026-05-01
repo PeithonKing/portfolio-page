@@ -133,8 +133,8 @@ async function fetchBlogsData() {
 		let jsonData = await jsonResponse.json();
 
 		// Fetch XML Data
-		let xmlResponse = await fetch('https://peithonking.github.io/my_blogs/rss.xml');
-		// let xmlResponse = await fetch('http://localhost:4321/my_blogs/rss.xml');
+		let xmlResponse = await fetch('https://blogs.peithonking.com/rss.xml');
+		// let xmlResponse = await fetch('http://localhost:4321/rss.xml');
 		let xmlText = await xmlResponse.text();
 
 		// Parse XML
